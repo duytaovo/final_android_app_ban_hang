@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.admin.product.AddSPActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/admin_back"
+            >
+
+            <TextView
+                android:id="@+id/textThemSP"
+                android:layout_width="200dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="134dp"
+                android:layout_marginTop="16dp"
+                android:text="THÊM SẢN PHẨM"
+                android:textColor="#EA2F2F"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="31dp"
+                    android:layout_marginStart="35dp"
+                    android:text="Chọn thương hiệu"
+                    android:textColor="#171717"
+                    android:textSize="18sp"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Spinner
+                    android:id="@+id/mySpinnerAddSp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textAlignment="center"></Spinner>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="#bc0202"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/editext_background"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Nhập tên sản phẩm "
+                    android:textAlignment="center"
+                    android:textColorHint="#FF171717"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Screen"
+                    android:textColor="#bc0202"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etScreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/editext_background"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Nhập màn hình"
+                    android:textAlignment="center"
+                    android:textColorHint="#FF171717"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CPU"
+                        android:textColor="#bc0202"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etCPU"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/editext_background"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Nhập CPU"
+                        android:textAlignment="center"
+                        android:textColorHint="#FF171717"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/line10"
+                    android:layout_width="156dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginEnd="32dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="OS"
+                        android:textColor="#bc0202"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etOs"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/editext_background"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Nhập Os"
+                        android:textAlignment="center"
+                        android:textColorHint="#FF171717"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Card"
+                    android:textColor="#bc0202"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/editext_background"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Nhập Card"
+                    android:textAlignment="center"
+                    android:textColorHint="#FF171717"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:text="Ram"
+                        android:textColor="#bc0202"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etRam"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/editext_background"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Nhập Ram"
+                        android:textAlignment="center"
+                        android:textColorHint="#FF171717"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rom"
+                        android:textColor="#bc0202"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etRom"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/editext_background"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Nhập Rom"
+                        android:textAlignment="center"
+                        android:textColorHint="#FF171717"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/line8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pin"
+                        android:textColor="#bc0202"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etPin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@drawable/editext_background"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Nhập Pin"
+                        android:textAlignment="center"
+                        android:textColorHint="#FF171717"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Weight  "
+                        android:textColor="#bc0202"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etWeight"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/editext_background"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Nhập Weight (Nhập số)"
+                        android:textAlignment="center"
+                        android:textColorHint="#FF171717"
+                        android:inputType="number"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/line11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Connector"
+                    android:textColor="#bc0202"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etConnector"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/editext_background"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Nhập Connector"
+                    android:textAlignment="center"
+                    android:textColorHint="#FF171717"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Price"
+                        android:textColor="#bc0202"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/editext_background"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Nhập giá (Nhập số)"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        android:textColorHint="#FF171717"
+                        android:textSize="16sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sale Price"
+                        android:inputType="number"
+                        android:textColor="#bc0202"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etSalePrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/editext_background"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Nhập giá giảm (Nhập số)"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        android:textColorHint="#FF171717"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/line15"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Special"
+                    android:textColor="#bc0202"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etSpecial"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/editext_background"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Nhập special"
+                    android:textAlignment="center"
+                    android:textColorHint="#FF171717"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Year Launch"
+                    android:textColor="#bc0202"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etYear_launch"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/editext_background"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Nhập năm ra mắt (Nhập số)"
+                    android:textAlignment="center"
+                    android:inputType="number"
+                    android:textColorHint="#FF171717"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line17"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Link Image"
+                    android:textColor="#bc0202"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etImage_url"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/editext_background"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Nhập link ảnh"
+                    android:textAlignment="center"
+                    android:textColorHint="#FF171717"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line18"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="vertical">
+                                <TextView
+                                    android:text="Description"
+                                    android:textColor="#bc0202"
+                                    android:textSize="18sp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/etDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/editext_background"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Nhập mô tả sản phẩm"
+                    android:textAlignment="center"
+                    android:textColorHint="#FF171717"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btAddSP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_btn_background"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="32dp"
+                android:text="Thêm sản phẩm"
+                android:textColor="#F3DF2E"></androidx.appcompat.widget.AppCompatButton>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/admin_back"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:hint="QUẢN LÝ ĐƠN ĐẶT HÀNG"
+                    android:rotationX="-8"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:textColorHint="#DD1616"></TextView>
+                <EditText
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="370dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:autofillHints=""
+                    android:background="@drawable/brand_background"
+                    android:drawableStart="@drawable/search"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="Bạn đang tìm gì ..."
+                    android:inputType="textPersonName"
+                    android:paddingStart="20dp"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="81dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:hint="Đơn hàng đang được xử lý"
+                    android:rotationX="-8"
+                    android:textSize="20dp"
+                    android:textColorHint="#DD1616"></TextView>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewStatus_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Xem tất cả"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#ffd400"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+<!--                <ImageView-->
+<!--                    android:src="@drawable/type_macbook"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="70dp" />-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Đơn hàng đã chấp nhận"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="20dp"
+                    android:textColorHint="#DD1616"
+                    >
+                </TextView>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewStatus_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Xem tất cả"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#ffd400"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+<!--                <ImageView-->
+<!--                    android:src="@drawable/type_study"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="70dp" />-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Đơn hàng đã giao cho đơn vị vận chuyển"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="20dp"
+                    android:textColorHint="#DD1616"
+                    >
+                </TextView>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewStatus_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Xem tất cả"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#ffd400"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+<!--                <ImageView-->
+<!--                    android:src="@drawable/type_technology"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="70dp" />-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Đơn hàng đã giao thành công"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="20dp"
+                    android:textColorHint="#DD1616"
+                    >
+                </TextView>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewStatus_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Xem tất cả"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#ffd400"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+<!--                <ImageView-->
+<!--                    android:src="@drawable/type_thin"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="70dp" />-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Đơn hàng giao thất bại"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="20dp"
+                    android:textColorHint="#DD1616"
+                    >
+                </TextView>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewStatus_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Xem tất cả"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#ffd400"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+<!--                <ImageView-->
+<!--                    android:src="@drawable/type_diamond"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="70dp" />-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Đơn hàng đã huỷ"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="20dp"
+                    android:textColorHint="#DD1616"
+                    >
+                </TextView>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewStatus_huyDon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Xem tất cả"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#ffd400"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#f1f1f1"
+                android:gravity="center">
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="5dp"-->
+<!--                    android:layout_marginRight="5dp"-->
+<!--                    android:text="2023. Công ty cổ phần Shop Laptop chính hãng. GPDKKD: 99999999 do sở KH ĐT TP.HCM cấp ngày 29/03/2023. GPMXH: 238/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 29/03/2023."-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="10sp"-->
+<!--                    tools:ignore="SmallSp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="5dp"-->
+<!--                    android:layout_marginRight="5dp"-->
+<!--                    android:text="Nội dung layout tham khảo trang web thegioididong.com do nhóm 25 thực hiện. Ứng dụng chỉ mang tính chất đồ án môn học, không phục vụ các lĩnh vực buôn bán hay marketing khác."-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="10sp"-->
+<!--                    tools:ignore="SmallSp" />-->
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

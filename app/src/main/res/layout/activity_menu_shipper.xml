@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="10dp"
+        android:background="@drawable/back_shipper">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <ImageView
+                android:id="@+id/imageLogo"
+                android:layout_width="197dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                android:layout_marginLeft="30dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="30dp"
+                android:text="Shipper  "
+                android:textColor="#000"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toEndOf="@+id/imageLogo"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="20dp"-->
+        <!--            android:text="Uy tín"-->
+        <!--            android:textColor="#32CD32"-->
+        <!--            android:textSize="14sp"-->
+        <!--            app:layout_constraintStart_toEndOf="@+id/imageLogo"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/textView"-->
+        <!--            tools:ignore="MissingConstraints" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="8dp">
+
+
+            <EditText
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:id="@+id/etTimKiem"
+                android:layout_width="367dp"
+                android:layout_height="41dp"
+                android:layout_margin="5dp"
+                android:autofillHints=""
+                android:background="@drawable/brand_background"
+                android:drawableStart="@drawable/search"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Bạn đang tìm gì ..."
+                android:inputType="textPersonName"
+                android:paddingStart="20dp"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                app:layout_constraintTop_toBottomOf="@+id/textView5"
+                tools:layout_editor_absoluteX="19dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/rounded_button_brand"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageLogoQLSP"
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_marginLeft="23dp"
+                    android:padding="5dp"
+                    android:src="@drawable/recieved"></ImageView>
+
+                <Button
+                    android:id="@+id/btNhanDonShipper"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_button"
+
+                    android:text="Đơn hàng đã xác nhận"
+                    android:textColor="#F44336"
+                    android:textColorLink="@color/purple_200" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/rounded_button_shipper"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageLogoQLBrand"
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_marginLeft="13dp"
+                    android:src="@drawable/successful"></ImageView>
+
+                <Button
+                    android:id="@+id/btDonDaGiaoShipper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_button_brand"
+                    android:text="Đơn hàng đã giao"
+                    android:textColor="#DF4040" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_button_order"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageDaNhan"
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/kyc"></ImageView>
+
+                <Button
+                    android:id="@+id/btDonDaNhanShipper"
+                    android:layout_width="145dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/rounded_button_user"
+                    android:text="Đơn đã nhận"
+                    android:textColor="#F44336"></Button>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="152dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rounded_button_user"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageLogoQLUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="105dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/cancel"></ImageView>
+
+                    <Button
+                        android:id="@+id/btDonDaHuyShipper"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_button_shipper"
+                        android:text="Đơn đã huỷ"
+                        android:textColor="#F44336"></Button>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

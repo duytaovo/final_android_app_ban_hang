@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="10dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="180dp"
+        android:background="@color/cardview_light_background"
+        android:layout_height="140dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:paddingLeft="5dp"
+        >
+
+        <TextView
+            android:id="@+id/etOrderNameReceiveAdmin"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Name Receive"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/etOrderAddressReceiveAdmin"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="address" />
+        <TextView
+            android:id="@+id/etOrderNameProductReceiveAdmin"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Name product" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btXemOrderAdmin"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/file"
+                android:textColor="#D6453A" />
+            <Button
+                android:id="@+id/btAcceptOrderAdmin"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/agreement"
+                android:textColor="#D6453A" />
+            <Button
+                android:id="@+id/btCancelOrderAdmin"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/cancel"
+                android:textColor="#D6453A" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

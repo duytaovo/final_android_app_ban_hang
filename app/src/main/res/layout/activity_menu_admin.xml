@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="10dp"
+        android:background="@drawable/admin_back">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <ImageView
+                android:id="@+id/imageLogo"
+                android:layout_width="197dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                android:layout_marginLeft="30dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="30dp"
+                android:text="Admin  "
+                android:textColor="#000"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toEndOf="@+id/imageLogo"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="20dp"-->
+        <!--            android:text="Uy tín"-->
+        <!--            android:textColor="#32CD32"-->
+        <!--            android:textSize="14sp"-->
+        <!--            app:layout_constraintStart_toEndOf="@+id/imageLogo"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/textView"-->
+        <!--            tools:ignore="MissingConstraints" />-->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:orientation="horizontal"
+           android:layout_marginBottom="10dp"
+           android:layout_marginLeft="20dp"
+           >
+
+           <EditText
+               android:focusable="false"
+               android:focusableInTouchMode="false"
+               android:layout_width="370dp"
+               android:layout_height="40dp"
+               android:layout_margin="5dp"
+               android:autofillHints=""
+               android:background="@drawable/brand_background"
+               android:drawableStart="@drawable/search"
+               android:drawablePadding="10dp"
+               android:ems="10"
+               android:hint="Bạn đang tìm gì ..."
+               android:inputType="textPersonName"
+               android:paddingStart="20dp"
+               android:textSize="14sp"
+               android:textStyle="italic" />
+
+       </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/rounded_button_shipper"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageLogoQLSP"
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_marginLeft="23dp"
+                    android:padding="5dp"
+                    android:src="@drawable/offer"></ImageView>
+
+                <Button
+                    android:id="@+id/btQuanLySP"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_button"
+
+                    android:text="Quan ly san pham"
+                    android:textColor="#F44336"
+                    android:textColorLink="@color/purple_200" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/rounded_button"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageLogoQLBrand"
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_marginLeft="23dp"
+                    android:src="@drawable/brand_image"></ImageView>
+
+                <Button
+                    android:id="@+id/btQuanLyBrand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_button_brand"
+                    android:text="Quản lý thương hiệu"
+                    android:textColor="#DF4040" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/rounded_button_thongke"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageLogoQLUser"
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_marginLeft="23dp"
+                    android:src="@drawable/team_management"></ImageView>
+
+                <Button
+                    android:id="@+id/btQuanLyUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_button_user"
+                    android:text="Quản Lý người dùng"
+                    android:textColor="#F44336"></Button>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="168dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_button_brand"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageLogoQLDon"
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_marginLeft="23dp"
+                    android:src="@drawable/business"></ImageView>
+
+                <Button
+                    android:id="@+id/btQuanLyDonHang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_button_order"
+                    android:text="Quản Lý đơn đặt hàng"
+                    android:textColor="#F44336" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="#4D5FC3"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageLogoQLThongKe"
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_marginLeft="23dp"
+                    android:src="@drawable/analytics"></ImageView>
+
+                <Button
+                    android:id="@+id/btThongKe"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_button_thongke"
+                    android:text="Thống kê"
+                    android:textColor="#F44336" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/rounded_button_user"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageLogoQL"
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_marginLeft="23dp"
+                    android:src="@drawable/recieved"></ImageView>
+
+                <Button
+                    android:id="@+id/btDonHangShipperXacNhan"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_button_shipper"
+                    android:text="Đơn hàng shipper đã nhận"
+                    android:textColor="#F44336" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.admin.product.AddSPActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/admin_back">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/textThemSP"
+                android:layout_width="wrap_content"
+                android:layout_height="31dp"
+                android:layout_marginStart="134dp"
+                android:layout_marginTop="16dp"
+                android:text="THÔNG TIN ĐẶT HÀNG"
+                android:textColor="#EA2F2F"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/line1"
+                android:orientation="vertical"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                                <TextView
+                                    android:text="Name receive"
+                                    android:textColor="#bc0202"
+                                    android:textSize="18sp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/etOrderNameReceiveShipper"
+                    android:background="@drawable/editext_background"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:hint="Tên người nhận"
+                    android:textColorHint="#171717"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lineNameProduct"
+                android:orientation="vertical"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:text="Name product"
+                    android:textColor="#bc0202"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/etOrderNameProductShipper"
+                    android:background="@drawable/editext_background"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:hint="Tên sản phẩm"
+                    android:textColorHint="#171717"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/line2"
+                android:orientation="vertical"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                                <TextView
+                                    android:text="Address"
+                                    android:textColor="#bc0202"
+                                    android:textSize="18sp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/etAddressShipper"
+                    android:background="@drawable/editext_background"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:hint="Địa chỉ"
+                    android:textColorHint="#171717"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/line3"
+                android:orientation="vertical"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                                <TextView
+                                    android:text="Phone number"
+                                    android:textColor="#bc0202"
+                                    android:textSize="18sp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/etPhoneShipper"
+                    android:background="@drawable/editext_background"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:hint="Số điện thoại"
+                    android:textColorHint="#171717"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line4"
+                android:orientation="vertical"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                                <TextView
+                                    android:text="Message"
+                                    android:textColor="#bc0202"
+                                    android:textSize="18sp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/etMessageShipper"
+                    android:background="@drawable/editext_background"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:hint="Tin nhắn"
+                    android:textColorHint="#171717"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line5"
+                android:orientation="vertical"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                                <TextView
+                                    android:text="Total price"
+                                    android:textColor="#bc0202"
+                                    android:textSize="18sp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/etTotalPriceShipper"
+                    android:background="@drawable/editext_background"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:hint="Tổng tiền"
+                    android:textColorHint="#171717"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line6"
+                android:orientation="vertical"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                                <TextView
+                                    android:text=""
+                                    android:textColor="#bc0202"
+                                    android:textSize="18sp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+<!--                    <EditText-->
+<!--                        android:id="@+id/etStatus"-->
+<!--                        android:layout_width="260dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:background="@drawable/editext_background"-->
+<!--                        android:ems="10"-->
+<!--                        android:gravity="center"-->
+<!--                        android:hint="Trạng thái"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textColorHint="#707070"-->
+<!--                        android:textSize="16sp" />-->
+                    <Spinner
+                        android:id="@+id/mySpinnerShipper"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="#CDDC39"></Spinner>
+
+                    <Button
+                        android:id="@+id/updateStatusShipper"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="#FFEB3B"
+                        android:text="Cập nhật"
+                        android:layout_marginLeft="10dp"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+            </LinearLayout>
+
+
+<!--            <Spinner-->
+<!--                android:id="@+id/spinner"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"></Spinner>-->
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

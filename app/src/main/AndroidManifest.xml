@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppBanLapTop"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.shipper.DonDaNhanCuaShipperActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.admin.order.DonShipperDaNhanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.shipper.ShipperMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.admin.thongke.ThongKeDoanhThuActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.admin.thongke.ThongKeDoanhThuActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".activity.admin.thongke.ThongKeSanPhamBanDuocActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.admin.thongke.ThongKeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.admin.order.DetailOrderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.admin.order.QuanLyOrderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.admin.user.DetailUserActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.admin.user.QuanLyUsersActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.admin.brand.AddBrandActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.admin.brand.QuanLyBrandActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.admin.MenuActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.admin.product.DetailProductAdminActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.admin.product.AdminActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.LogoutActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.admin.product.AddSPActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.shipper.DonDaXacNhanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.shipper.DonDaGiaoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.shipper.DonDaHuyActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.shipper.DetailOrderShipperActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

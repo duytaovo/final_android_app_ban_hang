@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.admin.brand.AddBrandActivity">
+    <LinearLayout
+        android:id="@+id/line"
+        android:orientation="vertical"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/admin_back">
+
+        <TextView
+            android:id="@+id/textThemSP"
+            android:layout_width="200dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="16dp"
+            android:text="THÊM THƯƠNG HIỆU"
+            android:textColor="#EA2F2F"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="#bc0202"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etNameBrand"
+                android:background="@drawable/editext_background"
+                android:ems="10"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:hint="Nhập tên thương hiệu"
+                android:textColorHint="#707070"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="#bc0202"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etAddressBrand"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/editext_background"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Nhập địa chỉ"
+                android:textAlignment="center"
+                android:textColorHint="#707070"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Link Image"
+                android:textColor="#bc0202"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etImageUrl_Brand"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/editext_background"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Nhập link ảnh thương hiệu"
+                android:textAlignment="center"
+                android:textColorHint="#707070"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btAddBrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_btn_background"
+            android:text="Thêm thương hiệu"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textColor="#FFEB3B"></androidx.appcompat.widget.AppCompatButton>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
